@@ -1,13 +1,13 @@
 answer = input ("Enter string to test for palindrome or 'exit':")
 
-print(answer)
-print(answer[::-1])
+# print(answer)
+# print(answer[::-1])
 
 def reverse_answer(answer):
     result = answer[::-1]
     return result
 
-print(reverse_answer(answer))
+# print(reverse_answer(answer))
 
 if answer == (reverse_answer(answer)):
     print("palindrome")
