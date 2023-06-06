@@ -1,16 +1,40 @@
-answer = input ("Enter string to test for palindrome or 'exit':")
+# Global variables
+word = input("Enter string to test for palindrome or 'exit':")
+reversed_word = word[::-1]
+
+# Function that evaluates whether user input is a palindrome and prints appropriate response.    
+def evaluate_answer(word,reversed_word):
+    if word == reversed_word:
+        print("palindrome")
+    elif word == "exit":
+        print("bye bye")
+    else:
+        print("not palindrome")
+
+evaluate_answer(word,reversed_word)
+
+# Function that reverses the order of the value word.
+# def reverse_word(word):
+#     reversed_word = word[::-1]
+#     return reversed_word
+
+# Prompts user for input and saves its value as answer.
+# answer = input ("Enter string to test for palindrome or 'exit':")
+# request_user_input()
+
+# reverse_answer(answer)
+# evaluate_answer(answer,result)
+
+# Evaluates whether user's input is a palindrome or not and prints appropriate response.
+# if answer == result:
+#     print("palindrome")
+# else:
+#     print("not palindrome")
 
 # print(answer)
 # print(answer[::-1])
 
-def reverse_answer(answer):
-    result = answer[::-1]
-    return result
-
 # print(reverse_answer(answer))
-
-if answer == (reverse_answer(answer)):
-    print("palindrome")
 
 # def reverse(answer):
 #     result = ""
